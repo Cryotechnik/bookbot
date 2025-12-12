@@ -10,3 +10,15 @@ def char_counter(text):
         else:
             char_count[char] = 1
     return char_count
+
+def sort_on(item):
+    return item["num"]
+
+def sort_char_count(char_count):
+    characters = []
+    for char, num in char_count.items():
+        characters.append({"char": char, "num": num})
+    
+    characters.sort(reverse = True, key = sort_on)
+    
+    return characters
