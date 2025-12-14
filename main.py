@@ -1,7 +1,7 @@
 import sys
 
 if len(sys.argv) != 2:
-    print("Usage: python3 main.py <path_to_book>")
+    print("Usage: python3 main.py <book_file_path>")
     sys.exit(1)
     
 from stats import word_counter, char_counter, sort_char_count
